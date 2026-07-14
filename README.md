@@ -1,4 +1,4 @@
-# 🏢 GIE Backend
+# GIE Backend
 
 > Système de gestion intégré pour les achats et les contacts - Backend RESTful API
 
@@ -9,58 +9,59 @@
 
 ---
 
-## 📋 Table des matières
+## Table des matières
 
-- [À propos](#-à-propos)
-- [Fonctionnalités](#-fonctionnalités)
-- [Technologies utilisées](#-technologies-utilisées)
-- [Prérequis](#-prérequis)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Démarrage](#-démarrage)
-- [Structure du projet](#-structure-du-projet)
-- [API Endpoints](#-api-endpoints)
-- [Base de données](#-base-de-données)
+- [À propos](#à-propos)
+- [Fonctionnalités](#fonctionnalités)
+- [Technologies utilisées](#technologies-utilisées)
+- [Prérequis](#prérequis)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Démarrage](#démarrage)
+- [Structure du projet](#structure-du-projet)
+- [API Endpoints](#api-endpoints)
+- [Base de données](#base-de-données)
+- [Projet Frontend](#projet-frontend)
 
 ---
 
-## 🎯 À propos
+## À propos
 
 **GIE Backend** est une application backend robuste développée en Java qui fournit une API RESTful pour gérer :
 
-- 📦 **Gestion des achats** : Produits, catégories, détails d'achat et statuts
-- 👥 **Gestion des contacts** : CRM pour particuliers et entreprises
-- 📧 **Envoi d'emails** : Service d'envoi de mails intégré
-- 🏠 **Gestion des adresses** : Système d'adressage complet
+- **Gestion des achats** : produits, catégories, détails d'achat et statuts
+- **Gestion des contacts** : CRM pour particuliers et entreprises
+- **Envoi d'emails** : service d'envoi de mails intégré
+- **Gestion des adresses** : système d'adressage complet
 
 Ce projet fait partie d'un écosystème GIE avec un frontend JavaFX séparé.
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 ### Module Achats
 
-- ✅ Gestion complète des produits avec catégories
-- ✅ Création et suivi des achats
-- ✅ Détails d'achat avec réductions
-- ✅ Gestion des statuts d'achat
-- ✅ Persistance automatique via Hibernate
+- Gestion complète des produits avec catégories
+- Création et suivi des achats
+- Détails d'achat avec réductions
+- Gestion des statuts d'achat
+- Persistance automatique via Hibernate
 
 ### Module CRM
 
-- ✅ Gestion des contacts (Particuliers & Entreprises)
-- ✅ Système d'adresses complet
-- ✅ Recherche par email, nom, téléphone
-- ✅ Envoi d'emails automatisé
-- ✅ Base de données relationnelle optimisée
+- Gestion des contacts (Particuliers & Entreprises)
+- Système d'adresses complet
+- Recherche par email, nom, téléphone
+- Envoi d'emails automatisé
+- Base de données relationnelle optimisée
 
 ---
 
-## 🛠 Technologies utilisées
+## Technologies utilisées
 
 | Technologie      | Version   | Description                   |
-| ---------------- | --------- | ----------------------------- |
+| ---------------- | --------- | ------------------------------ |
 | **Java**         | 21        | Langage de programmation      |
 | **Maven**        | 3.x       | Gestion des dépendances       |
 | **Spark Java**   | 2.5       | Framework web micro-services  |
@@ -71,20 +72,20 @@ Ce projet fait partie d'un écosystème GIE avec un frontend JavaFX séparé.
 
 ---
 
-## 📦 Prérequis
+## Prérequis
 
 Avant de commencer, assurez-vous d'avoir installé :
 
-- ☕ **JDK 21** - [Télécharger ici](https://www.oracle.com/java/technologies/downloads/#java21)
-- 🗄️ **MySQL Server** (5.x ou 8.x)
-- 📦 **Maven** (3.6+)
-- 🔧 **Git** (optionnel)
+- **JDK 21** — [Télécharger ici](https://www.oracle.com/java/technologies/downloads/#java21)
+- **MySQL Server** (5.x ou 8.x)
+- **Maven** (3.6+)
+- **Git** (optionnel)
 
-> ⚠️ **Important** : Ce projet nécessite **JDK 21**. Si vous rencontrez des problèmes, vérifiez votre version Java avec `java -version`.
+> **Important** : Ce projet nécessite **JDK 21**. Si vous rencontrez des problèmes, vérifiez votre version Java avec `java -version`.
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Cloner le projet
 
@@ -111,7 +112,7 @@ Le fichier JAR sera généré dans le dossier `target/` :
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### Configuration de la base de données
 
@@ -125,9 +126,9 @@ Le fichier JAR sera généré dans le dossier `target/` :
 <property name="hibernate.connection.password">root</property>
 ```
 
-> 💡 **Note** : Le schéma de base de données `gie` sera créé automatiquement au premier lancement.
+> **Note** : Le schéma de base de données `gie` sera créé automatiquement au premier lancement.
 
-> ⚠️ **Attention** : Si un schéma `gie` existe déjà, veuillez le supprimer pour éviter les conflits :
+> **Attention** : Si un schéma `gie` existe déjà, veuillez le supprimer pour éviter les conflits :
 >
 > ```sql
 > DROP DATABASE IF EXISTS gie;
@@ -142,15 +143,15 @@ Le serveur démarre par défaut sur :
 
 ---
 
-## 🎬 Démarrage
+## Démarrage
 
-### Méthode 1 : Exécuter le JAR
+### Méthode 1 : exécuter le JAR
 
 ```bash
 java -jar target/gie-backend-1.0-SNAPSHOT.jar
 ```
 
-### Méthode 2 : Via Maven
+### Méthode 2 : via Maven
 
 ```bash
 mvn exec:java
@@ -166,7 +167,7 @@ Serveur démarré sur l'adresse http://localhost:4567
 
 ---
 
-## 📁 Structure du projet
+## Structure du projet
 
 ```
 gie-backend/
@@ -210,14 +211,14 @@ gie-backend/
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
-### 📦 Achats
+### Achats
 
 #### Produits
 
 | Méthode  | Endpoint                   | Description                 |
-| -------- | -------------------------- | --------------------------- |
+| -------- | --------------------------- | ---------------------------- |
 | `GET`    | `/api/produits/all`        | Récupérer tous les produits |
 | `GET`    | `/api/produits/get/:id`    | Récupérer un produit par ID |
 | `POST`   | `/api/produits/add`        | Ajouter un nouveau produit  |
@@ -227,17 +228,17 @@ gie-backend/
 #### Achats
 
 | Méthode  | Endpoint                 | Description               |
-| -------- | ------------------------ | ------------------------- |
+| -------- | ------------------------- | -------------------------- |
 | `GET`    | `/api/achats/all`        | Récupérer tous les achats |
 | `GET`    | `/api/achats/get/:id`    | Récupérer un achat par ID |
 | `POST`   | `/api/achats/add`        | Créer un nouvel achat     |
 | `PUT`    | `/api/achats/update`     | Mettre à jour un achat    |
 | `DELETE` | `/api/achats/delete/:id` | Supprimer un achat        |
 
-### 👥 Contacts
+### Contacts
 
 | Méthode  | Endpoint                         | Description                 |
-| -------- | -------------------------------- | --------------------------- |
+| -------- | --------------------------------- | ---------------------------- |
 | `GET`    | `/api/contacts/all`              | Récupérer tous les contacts |
 | `GET`    | `/api/contacts/get/email/:email` | Rechercher par email        |
 | `GET`    | `/api/contacts/get/:id`          | Récupérer un contact par ID |
@@ -245,10 +246,10 @@ gie-backend/
 | `PUT`    | `/api/contacts/update`           | Mettre à jour un contact    |
 | `DELETE` | `/api/contacts/delete/:id`       | Supprimer un contact        |
 
-### 📍 Adresses
+### Adresses
 
 | Méthode  | Endpoint                   | Description                   |
-| -------- | -------------------------- | ----------------------------- |
+| -------- | --------------------------- | ------------------------------- |
 | `GET`    | `/api/adresses/all`        | Récupérer toutes les adresses |
 | `POST`   | `/api/adresses/add`        | Ajouter une nouvelle adresse  |
 | `PUT`    | `/api/adresses/update`     | Mettre à jour une adresse     |
@@ -256,21 +257,21 @@ gie-backend/
 
 ---
 
-## 🗄️ Base de données
+## Base de données
 
 ### Schéma
 
 Le backend utilise MySQL avec création automatique des tables via Hibernate (`hibernate.hbm2ddl.auto=update`).
 
-#### Tables principales :
+#### Tables principales
 
-- **`contact`** - Informations des contacts (avec héritage pour Particulier/Entreprise)
-- **`adresse`** - Adresses des contacts
-- **`produit`** - Catalogue des produits
-- **`achat`** - En-têtes des achats
-- **`detail_achat`** - Détails ligne par ligne des achats
-- **`categorie_produit`** - Catégories de produits
-- **`statut_achat`** - États des achats
+- **`contact`** — Informations des contacts (avec héritage pour Particulier/Entreprise)
+- **`adresse`** — Adresses des contacts
+- **`produit`** — Catalogue des produits
+- **`achat`** — En-têtes des achats
+- **`detail_achat`** — Détails ligne par ligne des achats
+- **`categorie_produit`** — Catégories de produits
+- **`statut_achat`** — États des achats
 
 ### Connexion
 
@@ -282,13 +283,13 @@ Password : root
 
 ---
 
-## 🔗 Projet Frontend
+## Projet Frontend
 
 Ce backend fonctionne avec une application JavaFX frontend.
 
 ### Prérequis Frontend
 
-- 📦 **JavaFX SDK** - [Télécharger la dernière version](https://gluonhq.com/products/javafx/)
+- **JavaFX SDK** — [Télécharger la dernière version](https://gluonhq.com/products/javafx/)
   - Compatible avec toutes les versions récentes (22+)
   - Téléchargez la version correspondant à votre OS (Windows, Mac, Linux)
 
@@ -308,31 +309,29 @@ java --module-path "C:\javafx-sdk-23\lib" --add-modules javafx.controls,javafx.f
 
 ---
 
-## 📝 Licence
+## Licence
 
 Ce projet est développé dans le cadre académique pour l'UIASS - EIA.
 
 ---
 
-## 👥 Contributeurs
+## Contributeurs
 
-Développé avec ❤️ par l'équipe GIE
+Développé par l'équipe GIE.
 
 ---
 
-## 📞 Support
+## Support
 
 Pour toute question ou problème :
 
-- 📧 Créer une issue sur GitHub
-- 💬 Contacter l'équipe de développement
+- Créer une issue sur GitHub
+- Contacter l'équipe de développement
 
 ---
 
 <div align="center">
 
-**[⬆ Retour en haut](#-gie-backend)**
-
-Made with ☕ and Java
+**[Retour en haut](#gie-backend)**
 
 </div>
